@@ -1,0 +1,21 @@
+Results for the tinyArray
+  insert 3.2 μs
+  append 4.9 μs
+Results for the smallArray
+  insert 9.3 μs
+  append 5.7 μs
+Results for the mediumArray
+  insert 2.2 μs
+  append 28.2 μs
+Results for the largeArray
+  insert 6.6452 ms
+  append 103.4 μs
+Results for the extraLargeArray
+  insert 634.6747 ms
+  append 2.3831 ms
+
+Looking at the results of the timers for the functions it is noted that as the array size increases the functions take
+longer amounts of time, yet the insert function, which unshifts an array seems to become exponentially longer to execute as the array size increases. It is interesting to see 
+how the insert function is faster in the tiny and medium array when compared to the append but the small array appends 
+faster. I'm chalking the reasoning for that up to my CPU. the better function to use for time efficiency is the append 
+function. The insert function is slower because it has to reassign each item a new index and add the new item at the very beginning. 
